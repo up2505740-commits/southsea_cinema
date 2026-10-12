@@ -20,18 +20,28 @@ class MovieListing extends StatelessWidget {
          padding: const EdgeInsets.all(16.0),
          child: Column(
            crossAxisAlignment: CrossAxisAlignment.start,
-           children: const [
-             Text('DEMON SLAYER: MUGEN TRAIN (2020) (15)',
+           children: [
+            const Text('DEMON SLAYER: MUGEN TRAIN (2020) (15)',
               style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 10),
-            Text(
+             const SizedBox(height: 12),
+             const Row(
+               children: [
+                 Icon(Icons.location_on, color: cinemaBrand, size: 18),
+                 SizedBox(width: 6),
+                 Text( 'Southsea Cinema Room',
+                  style: TextStyle(color: Colors.white70, fontSize: 14),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            const Text(
               'Tanjiro and the group join the Flame Hashira Kyojuro Rengoku aboard the Infinity Train to face a deadly demon causing mysterious disappearances.',
-              style: TextStyle(color: Colors.white70),
+              style: TextStyle(color: Colors.white70, height: 1.4),
             ),
           ],
         ),
