@@ -15,7 +15,27 @@ class MovieListing extends StatelessWidget {
         elevation: 0,
       ),
       drawer: const NavDrawer(),
-      body: const SizedBox.shrink(),
+      body: Container(
+         color: cinemaSurface,
+         padding: const EdgeInsets.all(16.0),
+         child: Column(
+           crossAxisAlignment: CrossAxisAlignment.start,
+           children: const [
+             Text('DEMON SLAYER: MUGEN TRAIN (2020) (15)',
+              style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            SizedBox(height: 10),
+            Text(
+              'Tanjiro and the group join the Flame Hashira Kyojuro Rengoku aboard the Infinity Train to face a deadly demon causing mysterious disappearances.',
+              style: TextStyle(color: Colors.white70),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
